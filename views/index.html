@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ACM Events</title>
+    <meta name="description" content="Home of ACM Events">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      ACM Events
+    </h1>
+    
+    <div class="flex-container">
+      
+      <section>
+        <h2>Delete Event</h2>
+        <form id="delete-event-form">
+          <label for="username">Username</label>
+          <input name="username" type="text">
+
+          <label for="password">Password</label>
+          <input name="password" type="password">
+
+          <label for="uuid">UUID</label>
+          <input name="uuid" type="text">
+
+          <button type="submit">Delete Event</button>
+        </form>
+
+        <h2>Add Event</h2>
+        <form id="add-event-form">
+          <label for="username">Username</label>
+          <input name="username" type="text">
+
+          <label for="password">Password</label>
+          <input name="password" type="password">
+
+          <label for="date">Date</label>
+          <input name="date" type="date">
+
+          <label for="description">Description</label>
+          <textarea name="description"></textarea>
+
+          <button type="submit">Submit Event</button>
+        </form>
+      </section>
+
+      <section>
+        <ul id="event-list"></ul>
+      </section>
+      
+    </div>
+  </body>
+</html>
